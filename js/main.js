@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   // if ($(window).width() > 968) {
   //   const windowWidth = $(window).width();
-  //   console.log(`${(windowWidth / 1900) * 100}%;`);
+  //   console.log(`${(windowWidth / 1920) * 100}%;`);
   //   $("body").css(`zoom`, `${(windowWidth / 1900) * 100}%`);
   // }
 
