@@ -1791,11 +1791,13 @@ img {
   height: 100vh;
   top: 0;
   right: 0;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
   padding: 45px 40px;
   background-color: #042a8c;
   overflow: hidden;
-  z-index: -1;
-  opacity: 0;
+  z-index: 10;
+  opacity: 1;
   pointer-events: none;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -1806,9 +1808,9 @@ img {
 }
 
 .fullpage-menu.active {
-  opacity: 1;
-  z-index: 10;
   pointer-events: unset;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .fullpage-menu .bottom-img {
@@ -1841,8 +1843,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .main-menu .main-menu__inner {
