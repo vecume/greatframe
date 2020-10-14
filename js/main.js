@@ -1,11 +1,11 @@
 $(document).ready(function () {
   location.href = "#";
 
-  if ($(window).width() > 968) {
-    const windowWidth = $(window).width();
-    console.log(`${(windowWidth / 1900) * 100}%;`);
-    $("body").css(`zoom`, `${(windowWidth / 1900) * 100}%`);
-  }
+  // if ($(window).width() > 968) {
+  //   const windowWidth = $(window).width();
+  //   console.log(`${(windowWidth / 1900) * 100}%;`);
+  //   $("body").css(`zoom`, `${(windowWidth / 1900) * 100}%`);
+  // }
 
   const menuAnchors = [
     "main",
