@@ -25,10 +25,20 @@
   align-items: center;
   width: 100%;
   max-width: 1780px;
-  background-image: url("../img/hero-bg1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center left 30%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url("../img/hero-bg1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left 30%;
+    z-index: 2;
+  }
 
   &:nth-child(even) {
     background-color: #fff;
@@ -45,25 +55,33 @@
   }
 
   &:nth-child(2) {
-    background-image: url("../img/hero-bg2.png");
-    background-position: center center;
+    &::before {
+      background-image: url("../img/hero-bg2.png");
+      background-position: center center;
+    }
     .section-img {
       right: 225px;
     }
   }
 
   &:nth-child(3) {
-    background-image: url("../img/hero-bg3.png");
-    background-position: center left 40%;
+    &::before {
+      background-image: url("../img/hero-bg3.png");
+      background-position: center left 40%;
+    }
     .section-img {
       right: 50px;
     }
   }
   &:nth-child(4) {
-    background-image: url("../img/hero-bg4.png");
+    &::before {
+      background-image: url("../img/hero-bg4.png");
+    }
   }
   &:nth-child(5) {
-    background-image: url("../img/hero-bg5.png");
+    &::before {
+      background-image: url("../img/hero-bg5.png");
+    }
     .section-img {
       right: 225px;
     }

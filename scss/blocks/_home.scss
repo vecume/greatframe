@@ -16,11 +16,13 @@
 }
 
 .home {
-  background: {
-    image: url("../img/main-bg.png");
-    repeat: no-repeat;
-    size: contain;
-    position: top left 10%;
+  &::before {
+    background: {
+      image: url("../img/main-bg.png");
+      repeat: no-repeat;
+      size: contain;
+      position: top left 10%;
+    }
   }
 }
 

@@ -213,7 +213,7 @@ img {
         border-color: #fff;
       }
     }
-    .menu-toggler-btn {
+    .js-open-menu-btn {
       span {
         color: $text-color;
       }
@@ -253,10 +253,26 @@ img {
         color: $text-color;
       }
     }
+    .big-text {
+      color: #f3f9fb;
+    }
   }
   .pp-tableCell {
     display: block;
     width: unset;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: {
+      repeat: no-repeat;
+      size: contain;
+    }
+    z-index: 2;
   }
 }
 
@@ -361,10 +377,42 @@ img {
     color: #f3f9fb;
     top: 60%;
   }
-  background: {
-    image: url("../img/about-bg.png");
-    repeat: no-repeat;
-    size: contain;
-    position: center center;
+  &::before {
+    background: {
+      image: url("../img/about-bg.png");
+      repeat: no-repeat;
+      size: contain;
+      position: center center;
+    }
+  }
+  .section-img {
+    right: 180px;
+  }
+}
+
+#team {
+  &::before {
+    background: {
+      image: url("../img/team-bg.png");
+      repeat: no-repeat;
+      size: cover;
+      position: center center;
+    }
+  }
+
+  .section-img {
+    right: 225px;
+  }
+  .section-content {
+    max-width: 350px;
+  }
+  .play-btn {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 54%;
+    left: 180px;
+    background-color: #fff;
+    border-radius: 50%;
   }
 }

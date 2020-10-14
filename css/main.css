@@ -892,7 +892,7 @@ img {
   border-color: #fff;
 }
 
-.main.even-section .menu-toggler-btn span {
+.main.even-section .js-open-menu-btn span {
   color: #4b4b4b;
 }
 
@@ -930,9 +930,25 @@ img {
   color: #4b4b4b;
 }
 
+.section:nth-child(even) .big-text {
+  color: #f3f9fb;
+}
+
 .section .pp-tableCell {
   display: block;
   width: unset;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
 }
 
 .section-top {
@@ -1056,17 +1072,46 @@ img {
   font-weight: 900;
 }
 
-#about {
+#about .big-text {
+  font-size: 220px;
+  color: #f3f9fb;
+  top: 60%;
+}
+
+#about::before {
   background-image: url("../img/about-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 
-#about .big-text {
-  font-size: 220px;
-  color: #f3f9fb;
-  top: 60%;
+#about .section-img {
+  right: 180px;
+}
+
+#team::before {
+  background-image: url("../img/team-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#team .section-img {
+  right: 225px;
+}
+
+#team .section-content {
+  max-width: 350px;
+}
+
+#team .play-btn {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 54%;
+  left: 180px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .section-menu {
@@ -1090,7 +1135,7 @@ img {
   color: #fff;
 }
 
-.home {
+.home::before {
   background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1298,10 +1343,20 @@ img {
           align-items: center;
   width: 100%;
   max-width: 1780px;
+}
+
+.heroes__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-image: url("../img/hero-bg1.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left 30%;
+  z-index: 2;
 }
 
 .heroes__item:nth-child(even) {
@@ -1317,7 +1372,7 @@ img {
   color: #f3f9fb;
 }
 
-.heroes__item:nth-child(2) {
+.heroes__item:nth-child(2)::before {
   background-image: url("../img/hero-bg2.png");
   background-position: center center;
 }
@@ -1326,7 +1381,7 @@ img {
   right: 225px;
 }
 
-.heroes__item:nth-child(3) {
+.heroes__item:nth-child(3)::before {
   background-image: url("../img/hero-bg3.png");
   background-position: center left 40%;
 }
@@ -1335,11 +1390,11 @@ img {
   right: 50px;
 }
 
-.heroes__item:nth-child(4) {
+.heroes__item:nth-child(4)::before {
   background-image: url("../img/hero-bg4.png");
 }
 
-.heroes__item:nth-child(5) {
+.heroes__item:nth-child(5)::before {
   background-image: url("../img/hero-bg5.png");
 }
 
