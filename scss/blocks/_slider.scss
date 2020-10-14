@@ -1,0 +1,125 @@
+.heroes {
+  background-color: $color1;
+  color: #fff;
+  .section-content {
+    max-width: 780px;
+  }
+}
+
+.heroes-slider {
+  height: 100vh;
+  width: 1780px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+}
+
+.heroes__item {
+  position: absolute !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1780px;
+  background-image: url("../img/hero-bg1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left 30%;
+
+  &:nth-child(even) {
+    background-color: #fff;
+    .section-content {
+      h3,
+      p {
+        color: $text-color;
+      }
+    }
+
+    .big-text {
+      color: #f3f9fb;
+    }
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/hero-bg2.png");
+    background-position: center center;
+    .section-img {
+      right: 225px;
+    }
+  }
+
+  &:nth-child(3) {
+    background-image: url("../img/hero-bg3.png");
+    background-position: center left 40%;
+    .section-img {
+      right: 50px;
+    }
+  }
+  &:nth-child(4) {
+    background-image: url("../img/hero-bg4.png");
+  }
+  &:nth-child(5) {
+    background-image: url("../img/hero-bg5.png");
+    .section-img {
+      right: 225px;
+    }
+  }
+
+  .section-content {
+    margin-left: 110px;
+    display: block;
+    margin-top: 25vh;
+    h3 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 144px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $color2;
+      margin-bottom: 35px;
+      line-height: 1;
+    }
+    p {
+      color: #fff;
+    }
+    .bottom-content {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+  .big-text {
+    font-size: 280px;
+    white-space: nowrap;
+  }
+}
+
+.slide-controllers {
+  position: absolute;
+  left: 120px;
+  bottom: 330px;
+  z-index: 10;
+  max-width: 230px;
+  h5 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  button {
+    width: 80px;
+    height: 80px;
+    background-color: $color3;
+    border-radius: 50%;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

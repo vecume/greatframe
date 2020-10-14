@@ -1,0 +1,119 @@
+.fullpage-menu {
+  position: absolute;
+  max-width: 1780px;
+  width: 1780px;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  padding: 45px 40px;
+  background-color: $color1;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+  background: {
+    image: url("../img/menu-bg.png");
+    repeat: no-repeat;
+    size: contain;
+    position: top right;
+  }
+  &.active {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: unset;
+  }
+  .bottom-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .circle {
+    &.primary {
+      width: 240px;
+      height: 240px;
+      top: -150px;
+      left: 55%;
+    }
+    &.secondary {
+      width: 500px;
+      height: 500px;
+      bottom: -250px;
+      right: -20px;
+    }
+  }
+  .big-text {
+    top: 45%;
+  }
+}
+
+.main-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+  .main-menu__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      font-size: 36px;
+      color: #fff;
+      text-transform: uppercase;
+      transition: 0.3s ease;
+      &:hover,
+      &:focus {
+        color: $color2;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      margin: 0 40px;
+      width: 140px;
+      height: 3px;
+      background-color: $color3;
+      transform: rotate(-45deg);
+    }
+    &:nth-child(4) {
+      &::after {
+        display: none;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+    &.active {
+      a {
+        color: $color2;
+      }
+    }
+  }
+}
+
+.menu-toggler-btn {
+  display: flex;
+  align-items: center;
+  .img-wrapper {
+    margin-right: 15px;
+  }
+  span {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+  }
+}

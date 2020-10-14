@@ -16,16 +16,11 @@
 }
 
 .home {
-  .circle-top {
-    width: 240px;
-    height: 240px;
-    @include circle(-200px, 40%, $color2);
-  }
-  .circle-bottom {
-    width: 120px;
-    height: 120px;
-    @include circle(unset, 45%, $color3, true);
-    bottom: -80px;
+  background: {
+    image: url("../img/main-bg.png");
+    repeat: no-repeat;
+    size: contain;
+    position: top left 10%;
   }
 }
 
