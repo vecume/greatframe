@@ -1,13 +1,22 @@
 $(document).ready(function () {
+  location.href = "#";
+
+  if ($(window).width() > 968) {
+    const windowWidth = $(window).width();
+    console.log(`${(windowWidth / 1900) * 100}%;`);
+    $("body").css(`zoom`, `${(windowWidth / 1900) * 100}%`);
+  }
+
   const menuAnchors = [
     "main",
     "about",
     "heroes",
     "team",
     "partners",
-    "achivement",
+    "achievements",
     "gallery",
     "contacts",
+    "news",
   ];
   const fullpage = $("#fullpage").pagepiling({
     navigation: false,
@@ -26,6 +35,35 @@ $(document).ready(function () {
     variableWidth: true,
     nextArrow: ".js-slide-next",
     prevArrow: ".js-slide-prev",
+  });
+
+  $(".js-achieve-slider").slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    dots: false,
+    // variableWidth: true,
+    nextArrow: ".js-fest-next",
+    prevArrow: ".js-fest-prev",
+  });
+
+  $(".js-gallery-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    nextArrow: ".js-gal-next",
+    prevArrow: ".js-gal-prev",
+    centerPadding: "0",
+    variableWidth: true,
+  });
+
+  $(".js-news-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    nextArrow: ".js-news-next",
+    prevArrow: ".js-news-prev",
+    centerPadding: "0",
+    variableWidth: true,
   });
 
   $(".js-heroes-slider").on("beforeChange", function (
@@ -56,4 +94,8 @@ $(document).ready(function () {
       $(".main").removeClass("even-section");
     }
   }
+});
+
+$(window).on("load", function () {
+  $(".preloader").fadeOut();
 });

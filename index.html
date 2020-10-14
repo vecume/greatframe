@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader__content">
+        <div class="preloader__first"></div>
+        <div class="preloader__second"></div>
+        <div class="preloader__third"></div>
+      </div>
+    </div>
+
     <main class="main">
       <div class="side-nav">
         <a href="#" class="log img-wrapper">
@@ -32,7 +40,7 @@
                 <li><a href="#heroes">Герои</a></li>
                 <li><a href="#team">Команда</a></li>
                 <li><a href="#partners">Партнеры</a></li>
-                <li><a href="#achivements">Достижения</a></li>
+                <li><a href="#achievements">Достижения</a></li>
                 <li><a href="#gallery">Галерея</a></li>
                 <li><a href="#contacts">контакты</a></li>
               </ul>
@@ -119,18 +127,10 @@
           <div class="slide-controllers">
             <h5>5 серийный мультсериал</h5>
             <div class="controllers-wrapper basic-flex">
-              <button
-                type="button"
-                data-slide="0"
-                class="img-wrapper js-slide-prev"
-              >
+              <button type="button" class="img-wrapper js-slide-prev">
                 <img src="img/icons/arrow-left.svg" alt="left" />
               </button>
-              <button
-                type="button"
-                data-slide="1"
-                class="img-wrapper js-slide-next"
-              >
+              <button type="button" class="img-wrapper js-slide-next">
                 <img src="img/icons/arrow-right.svg" alt="right" />
               </button>
             </div>
@@ -299,6 +299,423 @@
             <img src="img/team-img.png" alt="team img" />
           </div>
         </section>
+
+        <section id="partners" class="section partners">
+          <h2 class="big-text">партнеры</h2>
+          <div class="section-top">
+            <div class="language-box">
+              <a href="#" class="language__item active">RU</a>
+              <a href="#" class="language__item">EN</a>
+            </div>
+            <button type="button" class="js-open-menu-btn menu-toggler-btn">
+              <div class="img-wrapper">
+                <img src="img/icons/burger.svg" alt="burger" />
+              </div>
+              <span>
+                меню
+              </span>
+            </button>
+          </div>
+          <div class="section-content">
+            <h3>наши партнеры</h3>
+            <p>
+              Мир далёкого будущего полон противоречий. Наука и техника шагнули
+              далеко вперёд, и полёты в космос стали немногим сложнее, чем
+              посещение других стран для людей из XXI века, а пришельцы с других
+              планет стали так же привычны, как для нас туристы. Технологии
+              достигли столь высокой степени развития, что максимально облегчили
+              жизнь, наполнив её всевозможными устройствами и гаджетами...
+            </p>
+            <div class="img-wrapper">
+              <img src="img/partners.png" alt="" />
+            </div>
+          </div>
+          <div class="scroll-message">
+            <span>ВНИЗ</span>
+            <div class="img-wrapper">
+              <img src="img/icons/mouse-w.svg" alt="mouse" />
+            </div>
+          </div>
+          <div class="img-wrapper section-img">
+            <img src="img/partners-img.png" alt="partners img" />
+          </div>
+        </section>
+
+        <section id="achievements" class="section achievements">
+          <h2 class="big-text">достижения</h2>
+          <div class="section-top">
+            <div class="language-box">
+              <a href="#" class="language__item active">RU</a>
+              <a href="#" class="language__item">EN</a>
+            </div>
+            <button type="button" class="js-open-menu-btn menu-toggler-btn">
+              <div class="img-wrapper">
+                <img src="img/icons/burger.svg" alt="burger" />
+              </div>
+              <span>
+                меню
+              </span>
+            </button>
+          </div>
+          <div class="section-content">
+            <div class="content-text">
+              <h3>наши достижения</h3>
+              <p>
+                На сегодняшний день в портфеле более 32 активных проектов,
+                рассчитанных на разную целевую аудиторию.
+              </p>
+            </div>
+            <div class="content-tops">
+              <div class="top__item">
+                <h4><span>2</span><span>место</span></h4>
+                <div class="img-wrapper">
+                  <img src="img/disney.png" alt="disney" />
+                </div>
+              </div>
+              <div class="top__item">
+                <h4><span>5</span><span>топ</span></h4>
+                <div class="img-wrapper">
+                  <img src="img/northface.png" alt="northface" />
+                </div>
+              </div>
+              <div class="top__item">
+                <h4><span>10</span><span>топ</span></h4>
+                <div class="img-wrapper">
+                  <img src="img/timeout.png" alt="timeout" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="achieve-section-slider">
+            <h3>Награды и фестивали</h3>
+            <div class="inner-slider-wrapper">
+              <div class="js-achieve-slider achieve-slider">
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/netflix.png" alt="netflix" />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/amazonprime.png" alt="amazonprime.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/tvpolska.png" alt="tvpolska.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/mult.png" alt="mult.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/megafon.png" alt="megafon.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/tivibu.png" alt="tivibu.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/fclogo.png" alt="fc" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/netflix.png" alt="netflix" />
+                  </div>
+                </div>
+
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/amazonprime.png" alt="amazonprime.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/tvpolska.png" alt="tvpolska.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/mult.png" alt="mult.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/megafon.png" alt="megafon.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/tivibu.png" alt="tivibu.png" />
+                  </div>
+                </div>
+                <div>
+                  <div class="img-wrapper">
+                    <img src="img/fclogo.png" alt="fc" />
+                  </div>
+                </div>
+              </div>
+              <div class="slide-controllers">
+                <div class="controllers-wrapper basic-flex">
+                  <button type="button" class="img-wrapper js-fest-prev">
+                    <img src="img/icons/arrow-left.svg" alt="left" />
+                  </button>
+                  <button type="button" class="img-wrapper js-fest-next">
+                    <img src="img/icons/arrow-right.svg" alt="right" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-message">
+            <span>ВНИЗ</span>
+            <div class="img-wrapper">
+              <img src="img/icons/mouse-r.svg" alt="mouse" />
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="section gallery">
+          <h2 class="big-text">галерея</h2>
+          <div class="section-top">
+            <div class="language-box">
+              <a href="#" class="language__item active">RU</a>
+              <a href="#" class="language__item">EN</a>
+            </div>
+            <button type="button" class="js-open-menu-btn menu-toggler-btn">
+              <div class="img-wrapper">
+                <img src="img/icons/burger.svg" alt="burger" />
+              </div>
+              <span>
+                меню
+              </span>
+            </button>
+          </div>
+          <div class="section-content">
+            <div class="content-text">
+              <h3>галерея</h3>
+              <p>
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                текстов на латинице с начала XVI века. В то время некий
+                безымянный печатник создал большую коллекцию размеров и форм
+                шрифтов, используя
+              </p>
+              <div class="slide-controllers">
+                <div class="controllers-wrapper basic-flex">
+                  <button type="button" class="img-wrapper js-gal-prev">
+                    <img src="img/icons/arrow-left.svg" alt="left" />
+                  </button>
+                  <button type="button" class="img-wrapper js-gal-next">
+                    <img src="img/icons/arrow-right.svg" alt="right" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-slider js-gallery-slider">
+              <div>
+                <div class="gallery-item img-wrapper">
+                  <img src="img/gallery-1.png" alt="gallery 1" />
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item img-wrapper">
+                  <img src="img/gallery-2.png" alt="gallery 2" />
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item img-wrapper">
+                  <img src="img/gallery-3.png" alt="gallery 3" />
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item img-wrapper">
+                  <img src="img/gallery-1.png" alt="gallery 1" />
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item img-wrapper">
+                  <img src="img/gallery-2.png" alt="gallery 2" />
+                </div>
+              </div>
+              <div>
+                <div class="gallery-item img-wrapper">
+                  <img src="img/gallery-3.png" alt="gallery 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-message">
+            <span>ВНИЗ</span>
+            <div class="img-wrapper">
+              <img src="img/icons/mouse-r.svg" alt="mouse" />
+            </div>
+          </div>
+        </section>
+
+        <section id="contacts" class="section contacts">
+          <h2 class="big-text">контакты</h2>
+          <div class="section-top">
+            <div class="language-box">
+              <a href="#" class="language__item active">RU</a>
+              <a href="#" class="language__item">EN</a>
+            </div>
+            <button type="button" class="js-open-menu-btn menu-toggler-btn">
+              <div class="img-wrapper">
+                <img src="img/icons/burger.svg" alt="burger" />
+              </div>
+              <span>
+                меню
+              </span>
+            </button>
+          </div>
+          <div class="section-content">
+            <div class="contact-details">
+              <div class="contact-text">
+                <h3>контакты</h3>
+                <p>
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                  вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                  текстов на латинице с начала XVI века.
+                </p>
+              </div>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <span>ул. Максима Горького, 85, эт. 2</span>
+                  <a href="tel:+79269621818">+7 (926) 962-18-18</a>
+                </div>
+                <div class="contact-item email">
+                  <span>почта:</span>
+                  <a href="mailto:info@toyroy.ru">info@toyroy.ru</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h3>форма обратной связи</h3>
+              <form class="feedback-form">
+                <label>
+                  <input type="text" name="name" placeholder="ваше имя" />
+                </label>
+                <label>
+                  <input type="tel" name="tel" placeholder="телефон" />
+                </label>
+                <label>
+                  <input type="email" name="email" placeholder="почта" />
+                </label>
+                <label>
+                  <input type="text" name="message" placeholder="сообщение" />
+                </label>
+                <button type="submit" class="send-btn">отправить</button>
+              </form>
+            </div>
+          </div>
+          <div class="scroll-message">
+            <span>ВНИЗ</span>
+            <div class="img-wrapper">
+              <img src="img/icons/mouse-r.svg" alt="mouse" />
+            </div>
+          </div>
+          <div class="img-wrapper section-img">
+            <img src="img/contacts-img.png" alt="contact img" />
+          </div>
+        </section>
+
+        <section id="news" class="section news">
+          <h2 class="big-text">новости</h2>
+          <div class="section-top">
+            <div class="language-box">
+              <a href="#" class="language__item active">RU</a>
+              <a href="#" class="language__item">EN</a>
+            </div>
+            <button type="button" class="js-open-menu-btn menu-toggler-btn">
+              <div class="img-wrapper">
+                <img src="img/icons/burger.svg" alt="burger" />
+              </div>
+              <span>
+                меню
+              </span>
+            </button>
+          </div>
+          <div class="section-content">
+            <div class="content-top">
+              <h3>новости</h3>
+              <div class="slide-controllers">
+                <a href="#" class="all-news">все новости</a>
+                <div class="controllers-wrapper basic-flex">
+                  <button type="button" class="img-wrapper js-news-prev">
+                    <img src="img/icons/arrow-left.svg" alt="left" />
+                  </button>
+                  <button type="button" class="img-wrapper js-news-next">
+                    <img src="img/icons/arrow-right.svg" alt="right" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="news-wrapper js-news-slider">
+              <div class="news-item">
+                <span class="date">12.20.2020</span>
+                <h3>
+                  «ТОЙ РОЙ МЕДИА» объявили о партнерстве с Кидбургом и парком
+                  Фили
+                </h3>
+                <p>
+                  Компания «Той Рой Медиа» объявила о стратегическом партнерстве
+                  с детским городом профессий «Кидбург» и парком культуры и
+                  отдыха «Фили».
+                </p>
+                <a href="#">подробнее</a>
+              </div>
+              <div class="news-item has-bg">
+                <span class="date">12.20.2020</span>
+                <h3>
+                  «ТОЙ РОЙ МЕДИА» объявили о партнерстве с Кидбургом и парком
+                  Фили
+                </h3>
+                <p>
+                  Компания «Той Рой Медиа» объявила о стратегическом партнерстве
+                  с детским городом профессий «Кидбург» и парком культуры и
+                  отдыха «Фили».
+                </p>
+                <a href="#">подробнее</a>
+              </div>
+              <div class="news-item">
+                <span class="date">12.20.2020</span>
+                <h3>
+                  «ТОЙ РОЙ МЕДИА» объявили о партнерстве с Кидбургом и парком
+                  Фили
+                </h3>
+                <p>
+                  Компания «Той Рой Медиа» объявила о стратегическом партнерстве
+                  с детским городом профессий «Кидбург» и парком культуры и
+                  отдыха «Фили».
+                </p>
+                <a href="#">подробнее</a>
+              </div>
+              <div class="news-item">
+                <span class="date">12.20.2020</span>
+                <h3>
+                  «ТОЙ РОЙ МЕДИА» объявили о партнерстве с Кидбургом и парком
+                  Фили
+                </h3>
+                <p>
+                  Компания «Той Рой Медиа» объявила о стратегическом партнерстве
+                  с детским городом профессий «Кидбург» и парком культуры и
+                  отдыха «Фили».
+                </p>
+                <a href="#">подробнее</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <nav aria-label="main-menu" id="main-menu" class="fullpage-menu">
@@ -326,8 +743,8 @@
           </div>
           <div class="main-menu__inner">
             <li data-menuanchor="partners"><a href="#partners">Партнеры</a></li>
-            <li data-menuanchor="achivements">
-              <a href="#achivements">Достижения</a>
+            <li data-menuanchor="achievements">
+              <a href="#achievements">Достижения</a>
             </li>
             <li data-menuanchor="gallery"><a href="#gallery">Галерея</a></li>
             <li data-menuanchor="contacts"><a href="#contacts">контакты</a></li>
