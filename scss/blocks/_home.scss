@@ -1,0 +1,46 @@
+.section-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 4;
+  li {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+  a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+.home {
+  .circle-top {
+    width: 240px;
+    height: 240px;
+    @include circle(-200px, 40%, $color2);
+  }
+  .circle-bottom {
+    width: 120px;
+    height: 120px;
+    @include circle(unset, 45%, $color3, true);
+    bottom: -80px;
+  }
+}
+
+.home-content {
+  margin-left: 50px;
+  margin-top: 25vh;
+  h1 {
+    max-width: 500px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .img-wrapper {
+    justify-content: flex-start;
+    position: relative;
+    z-index: 4;
+  }
+}
