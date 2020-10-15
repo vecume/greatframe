@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // location.href = "#";
+  location.href = "#";
 
   // if ($(window).width() > 968) {
   //   const windowWidth = $(window).width();
@@ -41,7 +41,6 @@ $(document).ready(function () {
     slidesToShow: 7,
     slidesToScroll: 1,
     dots: false,
-    // variableWidth: true,
     nextArrow: ".js-fest-next",
     prevArrow: ".js-fest-prev",
     responsive: [
