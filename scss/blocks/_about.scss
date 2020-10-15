@@ -14,3 +14,11 @@
     right: 180px;
   }
 }
+
+@media (max-width: 1366px) {
+  #about {
+    .section-content {
+      max-width: 55%;
+    }
+  }
+}

@@ -1651,6 +1651,12 @@ img {
   right: 180px;
 }
 
+@media (max-width: 1366px) {
+  #about .section-content {
+    max-width: 55%;
+  }
+}
+
 #team::before {
   background-image: url("../img/team-bg.png");
   background-position: center center;
