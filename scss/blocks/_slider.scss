@@ -141,3 +141,51 @@
     }
   }
 }
+
+@media (max-width: 1366px) {
+  #heroes {
+    .slide-controllers {
+      left: 50px;
+      bottom: unset;
+      z-index: 10;
+      top: 361px;
+    }
+  }
+  .heroes-slider {
+    width: calc(100vw - 100px);
+  }
+
+  .heroes__item {
+    max-width: calc(100vw - 100px);
+    .section-content {
+      max-width: 950px;
+      margin-left: 50px !important;
+      margin-top: 25vh;
+      .bottom-content {
+        width: 55%;
+      }
+      h3 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 120px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $color2;
+        margin-bottom: 35px;
+        line-height: 1;
+      }
+      p {
+        color: #fff;
+      }
+      .bottom-content {
+        width: 40%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+#achievements {
+  &::before {
+    background: {
+      image: url("../img/achievement-bg.png");
+      position: center center;
+    }
+  }
+  .big-text {
+    top: unset;
+    bottom: 0;
+  }
+  .section-content {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    height: unset;
+  }
+  .content-text {
+    max-width: 380px;
+  }
+  .content-tops {
+    display: flex;
+    align-items: center;
+    .img-wrapper {
+      width: 260px;
+      height: 175px;
+    }
+    .top__item {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+      h4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span {
+          line-height: 1;
+          font-weight: bold;
+          text-transform: uppercase;
+          &:first-child {
+            font-size: 72px;
+            color: $color2;
+            margin-bottom: 5px;
+          }
+          &:last-child {
+            color: $color1;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .achieve-section-slider {
+    position: relative;
+    z-index: 3;
+    margin-left: 100px;
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+  }
+  .slide-controllers {
+    position: unset;
+    .controllers-wrapper {
+      flex-direction: column;
+      button {
+        margin-right: 0;
+        &:first-child {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .inner-slider-wrapper {
+    max-width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .achieve-slider {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    .slick-slide {
+      outline: none;
+    }
+    .img-wrapper {
+      display: flex !important;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  #achievements {
+    .section-content {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      margin-left: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 95%;
+    }
+    .content-tops {
+      .img-wrapper {
+        width: 180px;
+        height: 120px;
+        margin: 0 auto;
+      }
+    }
+    .achieve-section-slider {
+      margin-left: 25px;
+    }
+    .inner-slider-wrapper {
+      max-width: calc(100vw - 135px);
+      overflow: hidden;
+      justify-content: unset;
+    }
+    .achieve-slider {
+      width: 80%;
+      margin-right: 70px;
+      .img-wrapper {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}

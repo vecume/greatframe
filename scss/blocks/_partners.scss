@@ -1,0 +1,38 @@
+#partners {
+  &::before {
+    background: {
+      image: url("../img/partners-bg.png");
+      position: center center;
+    }
+  }
+  .section-img {
+    right: 125px;
+  }
+  .section-content {
+    max-width: 1150px;
+
+    .img-wrapper {
+      justify-content: flex-start;
+      margin-left: -30px;
+    }
+
+    h3,
+    p {
+      color: #fff;
+      max-width: 650px;
+    }
+    h3 {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .section-content {
+    max-width: 70%;
+
+    .img-wrapper {
+      max-width: 70%;
+    }
+  }
+}

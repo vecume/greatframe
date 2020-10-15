@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  location.href = "#";
+  // location.href = "#";
 
   // if ($(window).width() > 968) {
   //   const windowWidth = $(window).width();
@@ -44,10 +44,18 @@ $(document).ready(function () {
     // variableWidth: true,
     nextArrow: ".js-fest-next",
     prevArrow: ".js-fest-prev",
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+    ],
   });
 
   $(".js-gallery-slider").slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
     nextArrow: ".js-gal-next",

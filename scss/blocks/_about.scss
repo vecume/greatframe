@@ -1,0 +1,16 @@
+#about {
+  .big-text {
+    font-size: 220px;
+    color: #f3f9fb;
+    top: 60%;
+  }
+  &::before {
+    background: {
+      image: url("../img/about-bg.png");
+      position: center center;
+    }
+  }
+  .section-img {
+    right: 180px;
+  }
+}

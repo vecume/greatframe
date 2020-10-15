@@ -1,0 +1,130 @@
+#news {
+  &::before {
+    background: {
+      image: url("../img/gallery-bg.png");
+      position: center center;
+    }
+  }
+  .slide-controllers {
+    position: unset;
+    display: flex;
+    align-items: center;
+    max-width: unset;
+    .all-news {
+      color: #fff;
+      white-space: nowrap;
+      font-size: 14px;
+      display: block;
+      margin-right: 20px;
+    }
+  }
+  .section-content {
+    margin-top: 100px;
+    max-width: unset;
+    display: block;
+    .content-top {
+      display: flex;
+      max-width: 1550px;
+      margin-bottom: 100px;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        color: #fff;
+      }
+    }
+  }
+  .news-wrapper {
+    width: 1640px;
+    .slick-list {
+      padding-left: 370px !important;
+    }
+    .slick-slide {
+      margin: 0 10px;
+      outline: none;
+    }
+  }
+  .news-item {
+    padding: 50px 70px;
+    background-color: #fff;
+    width: 650px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    z-index: 5;
+    transition: 0.3s ease;
+    &.has-bg {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("../img/news-bg.png");
+      .date,
+      h3,
+      p,
+      a {
+        color: #fff;
+      }
+    }
+
+    .date {
+      font-size: 14px;
+      color: #a1a1a1;
+      display: block;
+      margin-bottom: 30px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: $ff2;
+      color: $text-color;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+    a {
+      color: $color2;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  #news {
+    .section-content {
+      margin-top: 50px;
+      .content-top {
+        margin-bottom: 60px;
+        max-width: calc(100vw - 180px);
+      }
+    }
+    .news-wrapper {
+      width: 1640px;
+      max-width: calc(100vw - 150px);
+      .slick-list {
+        padding-left: 350px !important;
+      }
+    }
+    .news-item {
+      padding: 30px 50px;
+      width: 500px;
+      .date {
+        font-size: 14px;
+        margin-bottom: 25px;
+      }
+      h3 {
+        font-size: 23px;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}

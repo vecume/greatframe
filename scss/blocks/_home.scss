@@ -41,3 +41,16 @@
     z-index: 4;
   }
 }
+
+@media (max-width: 1366px) {
+  .home-content {
+    margin-top: 20vh;
+    h1 {
+      max-width: 300px;
+      font-size: 40px;
+    }
+    .img-wrapper {
+      max-width: 600px;
+    }
+  }
+}
