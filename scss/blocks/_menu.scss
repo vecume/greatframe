@@ -1,7 +1,7 @@
 .fullpage-menu {
   position: absolute;
   max-width: 1780px;
-  width: 1780px;
+  width: calc(100% - 140px);
   height: 100vh;
   top: 0;
   right: 0;
@@ -115,5 +115,35 @@
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 900;
+  }
+}
+
+@media (max-width: 1650px) {
+  .main-menu {
+    .main-menu__inner {
+      flex-direction: column;
+      align-items: unset;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .fullpage-menu {
+    width: 100%;
+  }
+  .main-menu {
+    .main-menu__inner {
+      flex-direction: row;
+      align-items: center;
+    }
+    li {
+      a {
+        font-size: 28px;
+      }
+      &::after {
+        width: 80px;
+        height: 2px;
+      }
+    }
   }
 }

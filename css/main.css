@@ -1290,7 +1290,7 @@ img {
 .fullpage-menu {
   position: absolute;
   max-width: 1780px;
-  width: 1780px;
+  width: calc(100% - 140px);
   height: 100vh;
   top: 0;
   right: 0;
@@ -1435,6 +1435,40 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 900;
+}
+
+@media (max-width: 1650px) {
+  .main-menu .main-menu__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+}
+
+@media (max-width: 1366px) {
+  .fullpage-menu {
+    width: 100%;
+  }
+  .main-menu .main-menu__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-menu li a {
+    font-size: 28px;
+  }
+  .main-menu li::after {
+    width: 80px;
+    height: 2px;
+  }
 }
 
 .heroes {
