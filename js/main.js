@@ -79,6 +79,13 @@ $(document).ready(function () {
     currentSlide,
     nextSlide
   ) {
+    const topPosition = $(
+      ".heroes__item .section-content .bottom-content"
+    ).offset().top;
+
+    console.log(topPosition);
+
+    $("#heroes .slide-controllers").css("top", topPosition);
     updateSiteBar(nextSlide);
   });
 

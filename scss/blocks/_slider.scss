@@ -123,7 +123,7 @@
 .slide-controllers {
   position: absolute;
   left: 120px;
-  bottom: 330px;
+  top: 51vh;
   z-index: 10;
   max-width: 230px;
   h5 {
@@ -148,7 +148,6 @@
       left: 50px;
       bottom: unset;
       z-index: 10;
-      top: 361px;
     }
   }
   .heroes-slider {
@@ -157,8 +156,13 @@
 
   .heroes__item {
     max-width: calc(100vw - 100px);
+    &:nth-child(1) {
+      .section-img {
+        right: -150px !important;
+      }
+    }
     .section-content {
-      max-width: 950px;
+      // max-width: 65%;
       margin-left: 50px !important;
       margin-top: 25vh;
       .bottom-content {
@@ -183,8 +187,22 @@
         color: #fff;
       }
       .bottom-content {
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .heroes__item {
+    .section-content {
+      h3 {
+        font-size: 30px;
+      }
+      h2 {
+        font-size: 90px;
+        margin-bottom: 20px;
       }
     }
   }

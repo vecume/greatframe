@@ -1005,9 +1005,16 @@ img {
 .section-img {
   height: 100%;
   position: absolute;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   top: 0;
   right: 0;
   z-index: 3;
+}
+
+.section-img img {
+  height: 100%;
 }
 
 .section {
@@ -1047,7 +1054,7 @@ img {
   left: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 2;
+  z-index: 0;
 }
 
 .section-top {
@@ -1603,7 +1610,7 @@ img {
 .slide-controllers {
   position: absolute;
   left: 120px;
-  bottom: 330px;
+  top: 51vh;
   z-index: 10;
   max-width: 230px;
 }
@@ -1630,7 +1637,6 @@ img {
     left: 50px;
     bottom: unset;
     z-index: 10;
-    top: 361px;
   }
   .heroes-slider {
     width: calc(100vw - 100px);
@@ -1638,8 +1644,10 @@ img {
   .heroes__item {
     max-width: calc(100vw - 100px);
   }
+  .heroes__item:nth-child(1) .section-img {
+    right: -150px !important;
+  }
   .heroes__item .section-content {
-    max-width: 950px;
     margin-left: 50px !important;
     margin-top: 25vh;
   }
@@ -1665,8 +1673,18 @@ img {
     color: #fff;
   }
   .heroes__item .section-content .bottom-content {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .heroes__item .section-content h3 {
+    font-size: 30px;
+  }
+  .heroes__item .section-content h2 {
+    font-size: 90px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1687,7 +1705,7 @@ img {
 
 @media (max-width: 1366px) {
   #about .section-content {
-    max-width: 55%;
+    max-width: 45%;
   }
 }
 
@@ -1702,6 +1720,7 @@ img {
 
 #team .section-content {
   max-width: 350px;
+  margin-top: 100px;
 }
 
 #team .play-btn {
