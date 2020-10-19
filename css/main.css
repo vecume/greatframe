@@ -1013,7 +1013,7 @@ img {
   z-index: 3;
 }
 
-.section-img img {
+.section-img > img {
   height: 100%;
 }
 
@@ -1731,6 +1731,15 @@ img {
   left: 180px;
   background-color: #fff;
   border-radius: 50%;
+}
+
+@media (max-width: 1366px) {
+  #team .play-btn {
+    width: 100px;
+    height: 100px;
+    top: 53%;
+    left: 65px;
+  }
 }
 
 #partners::before {

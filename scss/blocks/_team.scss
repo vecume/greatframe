@@ -24,5 +24,13 @@
   }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1366px) {
+  #team {
+    .play-btn {
+      width: 100px;
+      height: 100px;
+      top: 53%;
+      left: 65px;
+    }
+  }
 }

@@ -209,7 +209,7 @@ img {
   top: 0;
   right: 0;
   z-index: 3;
-  img {
+  & > img {
     height: 100%;
   }
 }
