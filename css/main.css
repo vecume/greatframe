@@ -1015,6 +1015,7 @@ img {
 
 .section-img > img {
   height: 100%;
+  max-width: unset;
 }
 
 .section {
