@@ -1,3 +1,7 @@
+//=require jquery/dist/jquery.js
+//=require pagepiling.js/dist/jquery.pagepiling.js
+//=require slick-carousel/slick/slick.js
+
 $(document).ready(function () {
   location.href = "#";
 
@@ -28,6 +32,7 @@ $(document).ready(function () {
   });
 
   $(".js-heroes-slider").slick({
+    rows: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -38,6 +43,7 @@ $(document).ready(function () {
   });
 
   $(".js-achieve-slider").slick({
+    rows: 0,
     slidesToShow: 7,
     slidesToScroll: 1,
     dots: false,
@@ -54,6 +60,7 @@ $(document).ready(function () {
   });
 
   $(".js-gallery-slider").slick({
+    rows: 0,
     slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
@@ -64,6 +71,7 @@ $(document).ready(function () {
   });
 
   $(".js-news-slider").slick({
+    rows: 0,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
