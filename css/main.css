@@ -1717,6 +1717,7 @@ img {
 
 #team .section-img {
   right: 225px;
+  display: inline-block;
 }
 
 #team .section-content {
