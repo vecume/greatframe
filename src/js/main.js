@@ -99,6 +99,14 @@ $(document).ready(function () {
     prevArrow: ".js-news-prev",
     centerPadding: "0",
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 451,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $(".js-heroes-slider").on("beforeChange", function (

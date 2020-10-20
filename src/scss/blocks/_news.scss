@@ -129,4 +129,26 @@
   }
 }
 
-// @media
+@media (max-width: 450px) {
+  #news {
+    .section-content {
+      margin-left: 0 !important;
+    }
+    .slide-controllers {
+      display: none;
+    }
+    .news-wrapper {
+      max-width: 100vw;
+      .slick-list {
+        padding-left: 0 !important;
+        padding-right: 50px !important;
+      }
+    }
+    .pp-tableCell {
+      max-width: calc(100vw - 40px);
+    }
+    .news-item {
+      max-width: 80vw;
+    }
+  }
+}

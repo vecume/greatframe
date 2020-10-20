@@ -34,6 +34,10 @@ textarea {
   overflow: hidden;
 }
 
+.even-logo {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -190,6 +194,16 @@ img {
     .js-open-menu-btn {
       span {
         color: $text-color;
+      }
+    }
+    #heroes {
+      .logo-mob {
+        picture {
+          display: none;
+          &.even-logo {
+            display: inherit;
+          }
+        }
       }
     }
   }
