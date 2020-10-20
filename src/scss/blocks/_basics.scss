@@ -430,7 +430,7 @@ img {
     display: none;
   }
   .section {
-    max-height: 100vh;
+    min-height: -webkit-fill-available;
     &::before {
       background-image: none;
       display: none;
