@@ -430,6 +430,7 @@ img {
     display: none;
   }
   .section {
+    max-height: 100vh;
     &::before {
       background-image: none;
       display: none;
