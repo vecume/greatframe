@@ -35,3 +35,28 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  #team {
+    .play-btn {
+      width: 75px;
+      height: 75px;
+      top: unset;
+      bottom: 120px;
+      left: 130px;
+    }
+    .section-content {
+      margin-left: 0 !important;
+      max-width: 192px;
+      margin-top: 180px;
+      p {
+        height: 125px;
+        overflow: hidden;
+      }
+    }
+    .section-img {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}

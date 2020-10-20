@@ -147,3 +147,32 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .fullpage-menu {
+    padding: 25px;
+    background-image: none;
+    background-color: $color1;
+    .big-text {
+      display: none;
+    }
+  }
+  .main-menu {
+    position: unset;
+    transform: none;
+    margin-top: 10vh;
+    li {
+      margin-bottom: 30px;
+      a {
+        font-size: 20px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .main-menu__inner {
+      margin-bottom: 0 !important;
+      flex-direction: column;
+    }
+  }
+}

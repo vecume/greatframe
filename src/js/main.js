@@ -31,6 +31,17 @@ $(document).ready(function () {
     },
   });
 
+  $(".slider-scroll input").each(function () {
+    const target = $(this).data("target");
+    const items = $(target).children().length;
+    $(this).attr("max", items - 1);
+  });
+
+  $(".slider-scroll input").on("change", function () {
+    const target = $(this).data("target");
+    $(target).slick("slickGoTo", $(this).val());
+  });
+
   $(".js-heroes-slider").slick({
     rows: 0,
     slidesToShow: 1,
@@ -54,6 +65,12 @@ $(document).ready(function () {
         breakpoint: 1400,
         settings: {
           slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 451,
+        settings: {
+          slidesToShow: 2,
         },
       },
     ],
@@ -107,6 +124,21 @@ $(document).ready(function () {
 
   $(".menu-wrapper li a").on("click", function () {
     $("#main-menu").removeClass("active");
+  });
+
+  $(".language-box").on("click", function () {
+    $(this).toggleClass("active");
+  });
+
+  $(".toggle-contacts-btn").on("click", function () {
+    const text = $(this).attr("data-text");
+    const oldText = $(this).text();
+    const target = $(this).attr("data-target");
+    const newTarget = $($(target).siblings()[0]).attr("class");
+    $(this).attr("data-target", `.${newTarget}`).attr("data-text", oldText);
+    $(this).text(text);
+    $(target).show();
+    $(`.${newTarget}`).hide();
   });
 
   function updateSiteBar(index) {

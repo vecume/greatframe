@@ -29,10 +29,28 @@
       <div id="fullpage">
         <section id="main" class="section home">
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
             </div>
+            <button
+              type="button"
+              class="menu-mob js-open-menu-btn menu-toggler-btn"
+            >
+              <div class="img-wrapper">
+                <img src="img/icons/burger.svg" alt="burger" />
+              </div>
+              <span>
+                меню
+              </span>
+            </button>
             <nav aria-label="main-page" class="section-nav">
               <ul class="section-menu menu-wrapper">
                 <li><a href="#main">Главная</a></li>
@@ -59,13 +77,27 @@
             </div>
           </div>
           <div class="img-wrapper section-img">
-            <img src="img/main-img.png" alt="main img" />
+            <picture>
+              <source
+                media="(max-width: 450px)"
+                srcset="img/main-img-mob.png"
+              />
+              <source media="(min-width: 450px)" srcset="img/main-img.png" />
+              <img src="img/main-img-mob.png" alt="main img" />
+            </picture>
           </div>
         </section>
 
         <section id="about" class="section about">
           <h2 class="big-text">о компании</h2>
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
@@ -105,12 +137,26 @@
             </div>
           </div>
           <div class="img-wrapper section-img">
-            <img src="img/about-img.png" alt="about img" />
+            <picture>
+              <source
+                media="(max-width: 450px)"
+                srcset="img/about-img-mob.png"
+              />
+              <source media="(min-width: 450px)" srcset="img/about-img.png" />
+              <img src="img/about-img-mob.png" alt="main img" />
+            </picture>
           </div>
         </section>
 
         <section id="heroes" class="section heroes">
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
@@ -156,7 +202,17 @@
                 </div>
               </div>
               <div class="img-wrapper section-img">
-                <img src="img/hero-img1.png" alt="hero img" />
+                <picture>
+                  <source
+                    media="(max-width: 450px)"
+                    srcset="img/hero-img1-mob.png"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="img/hero-img1.png"
+                  />
+                  <img src="img/hero-img1-mob.png" alt="main img" />
+                </picture>
               </div>
             </div>
             <div class="heroes__item">
@@ -222,7 +278,20 @@
                 </div>
               </div>
               <div class="img-wrapper section-img">
-                <img src="img/hero-img4.png" alt="hero img" />
+                <picture>
+                  <source
+                    media="(max-width: 450px)"
+                    srcset="img/hero-img4-mob.png"
+                  />
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="img/hero-img4.png"
+                  />
+                  <img
+                    src="http://localhost:3000/img/hero-img4-mob.png"
+                    alt="main img"
+                  />
+                </picture>
               </div>
             </div>
             <div class="heroes__item">
@@ -249,7 +318,15 @@
               </div>
             </div>
           </div>
-
+          <div class="slider-scroll">
+            <input
+              value="0"
+              min="0"
+              step="1"
+              type="range"
+              data-target="#heroes-slider"
+            />
+          </div>
           <div class="scroll-message">
             <span>ВНИЗ</span>
             <div class="img-wrapper">
@@ -261,6 +338,13 @@
         <section id="team" class="section team">
           <h2 class="big-text">команда</h2>
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
@@ -296,13 +380,27 @@
             <button type="button" class="play-btn img-wrapper">
               <img src="img/icons/play.svg" alt="play" />
             </button>
-            <img src="img/team-img.png" alt="team img" />
+            <picture>
+              <source
+                media="(max-width: 450px)"
+                srcset="img/team-img-mob.png"
+              />
+              <source media="(min-width: 450px)" srcset="img/team-img.png" />
+              <img src="img/team-img-mob.png" alt="main img" />
+            </picture>
           </div>
         </section>
 
         <section id="partners" class="section partners">
           <h2 class="big-text">партнеры</h2>
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
@@ -327,7 +425,15 @@
               жизнь, наполнив её всевозможными устройствами и гаджетами...
             </p>
             <div class="img-wrapper">
-              <img src="img/partners.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 450px)"
+                  srcset="img/partners-mob.png"
+                />
+                <source media="(min-width: 450px)" srcset="img/partners.png" />
+                <img src="img/partners-mob.png" alt="main img" />
+              </picture>
+              <!-- <img src="img/partners.png" alt="" /> -->
             </div>
           </div>
           <div class="scroll-message">
@@ -337,13 +443,30 @@
             </div>
           </div>
           <div class="img-wrapper section-img">
-            <img src="img/partners-img.png" alt="partners img" />
+            <picture>
+              <source
+                media="(max-width: 450px)"
+                srcset="img/partners-img-mob.png"
+              />
+              <source
+                media="(min-width: 450px)"
+                srcset="img/partners-img.png"
+              />
+              <img src="img/partners-img-mob.png" alt="main img" />
+            </picture>
           </div>
         </section>
 
         <section id="achievements" class="section achievements">
           <h2 class="big-text">достижения</h2>
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
@@ -463,6 +586,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="slide-controllers">
                 <div class="controllers-wrapper basic-flex">
                   <button type="button" class="img-wrapper js-fest-prev">
@@ -475,6 +599,15 @@
               </div>
             </div>
           </div>
+          <div class="slider-scroll">
+            <input
+              value="0"
+              min="0"
+              step="1"
+              type="range"
+              data-target=".js-achieve-slider"
+            />
+          </div>
           <div class="scroll-message">
             <span>ВНИЗ</span>
             <div class="img-wrapper">
@@ -486,6 +619,13 @@
         <section id="gallery" class="section gallery">
           <h2 class="big-text">галерея</h2>
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
@@ -553,6 +693,15 @@
               </div>
             </div>
           </div>
+          <div class="slider-scroll">
+            <input
+              value="0"
+              min="0"
+              step="1"
+              type="range"
+              data-target=".js-gallery-slider"
+            />
+          </div>
           <div class="scroll-message">
             <span>ВНИЗ</span>
             <div class="img-wrapper">
@@ -564,10 +713,25 @@
         <section id="contacts" class="section contacts">
           <h2 class="big-text">контакты</h2>
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
             </div>
+            <button
+              type="button"
+              data-target=".contact-details"
+              class="toggle-contacts-btn"
+              data-text="форма"
+            >
+              контакты
+            </button>
             <button type="button" class="js-open-menu-btn menu-toggler-btn">
               <div class="img-wrapper">
                 <img src="img/icons/burger.svg" alt="burger" />
@@ -577,7 +741,7 @@
               </span>
             </button>
           </div>
-          <div class="section-content">
+          <div id="contact-section-content" class="section-content">
             <div class="contact-details">
               <div class="contact-text">
                 <h3>контакты</h3>
@@ -631,6 +795,13 @@
         <section id="news" class="section news">
           <h2 class="big-text">новости</h2>
           <div class="section-top">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
             <div class="language-box">
               <a href="#" class="language__item active">RU</a>
               <a href="#" class="language__item">EN</a>
@@ -721,6 +892,15 @@
       <nav aria-label="main-menu" id="main-menu" class="fullpage-menu">
         <h2 class="big-text">меню</h2>
         <div class="section-top">
+          <a href="#" class="logo-mob logo img-wrapper">
+            <a href="#" class="logo-mob logo img-wrapper">
+              <picture>
+                <source media="(max-width: 450px)" srcset="img/logo-mob.svg" />
+                <source media="(min-width: 450px)" srcset="img/logo.svg" />
+                <img src="img/logo-mob.svg" alt="main img" />
+              </picture>
+            </a>
+          </a>
           <div class="language-box">
             <a href="#" class="language__item active">RU</a>
             <a href="#" class="language__item">EN</a>

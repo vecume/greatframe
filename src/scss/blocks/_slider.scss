@@ -142,6 +142,10 @@
   }
 }
 
+.slider-scroll {
+  display: none;
+}
+
 @media (max-width: 1366px) {
   #heroes {
     .slide-controllers {
@@ -204,6 +208,179 @@
         font-size: 90px;
         margin-bottom: 20px;
       }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .slide-controllers {
+    display: none;
+  }
+  #heroes-slider {
+    width: 100%;
+    .section-content {
+      margin-top: 45vh;
+      margin-left: 20px !important;
+      h3 {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 48px;
+      }
+      p {
+        height: 150px;
+        overflow: hidden;
+      }
+      .bottom-content {
+        max-width: 270px;
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+  .heroes__item {
+    max-width: 100vw;
+    &::before {
+      background-image: none;
+      display: none;
+    }
+    .section-img {
+      height: 90vh;
+      bottom: 0;
+      top: unset;
+      right: -135px !important;
+    }
+    &:nth-child(1) {
+      .section-img {
+        display: block;
+        height: auto;
+        right: 15% !important;
+        top: 70px;
+      }
+    }
+    &:nth-child(3) {
+      .section-img {
+        right: -190px !important;
+      }
+    }
+    &:nth-child(4) {
+      .section-img {
+        right: 0px !important;
+      }
+    }
+    &:nth-child(5) {
+      .section-img {
+        right: -85px !important;
+      }
+    }
+  }
+  .slider-scroll {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    border-radius: 50px;
+    transform: translateX(-50%);
+    bottom: 25px;
+    input[type="range"] {
+      -webkit-appearance: none;
+      margin: 10px 0;
+      width: 100%;
+      background-color: transparent;
+    }
+    input[type="range"]:focus {
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 7px;
+      cursor: pointer;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      background-color: $color3;
+      border-radius: 25px;
+      border: 0px solid #000101;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      border: 0px solid #000000;
+      height: 21px;
+      width: 37px;
+      border-radius: 50px;
+      background-color: $color2;
+      background-image: url("../img/icons/scroll-lines.svg");
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -6px;
+    }
+    input[type="range"]:focus::-webkit-slider-runnable-track {
+      background-color: $color3;
+    }
+    input[type="range"]::-moz-range-track {
+      width: 100%;
+      height: 12.8px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      background-color: $color3;
+      border-radius: 25px;
+      border: 0px solid #000101;
+    }
+    input[type="range"]::-moz-range-thumb {
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      border: 0px solid #000000;
+      height: 20px;
+      width: 39px;
+      border-radius: 7px;
+      background-color: $color2;
+      background-image: url("../img/icons/scroll-lines.svg");
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+    }
+    input[type="range"]::-ms-track {
+      width: 100%;
+      height: 12.8px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      border-width: 39px 0;
+      color: transparent;
+    }
+    input[type="range"]::-ms-fill-lower {
+      background-color: $color3;
+      border: 0px solid #000101;
+      border-radius: 50px;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    }
+    input[type="range"]::-ms-fill-upper {
+      background-color: $color3;
+      border: 0px solid #000101;
+      border-radius: 50px;
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    }
+    input[type="range"]::-ms-thumb {
+      box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+      border: 0px solid #000000;
+      height: 20px;
+      width: 39px;
+      border-radius: 7px;
+      background-color: $color2;
+      background-image: url("../img/icons/scroll-lines.svg");
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      cursor: pointer;
+    }
+    input[type="range"]:focus::-ms-fill-lower {
+      background-color: $color3;
+    }
+    input[type="range"]:focus::-ms-fill-upper {
+      background-color: $color3;
     }
   }
 }
