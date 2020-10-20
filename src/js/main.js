@@ -31,26 +31,27 @@ $(document).ready(function () {
     },
   });
 
-  $(".slider-scroll input").each(function () {
-    const target = $(this).data("target");
-    const items = $(target).children().length;
-    $(this).attr("max", items * 100 - 100);
-  });
+  // $(".slider-scroll input").each(function () {
+  //   const target = $(this).data("target");
+  //   const items = $(target).children().length;
+  //   $(this).attr("max", items * 100 - 100);
+  // });
 
-  $(".slider-scroll input").on("change", function () {
-    const target = $(this).data("target");
-    // if (parseInt($(this).val(), 10) % 100 == 0) {
-    console.log($(this).val());
-    $(target).slick("slickGoTo", Math.floor($(this).val() / 100));
-    // }
-  });
+  // $(".slider-scroll input").on("change", function () {
+  //   const target = $(this).data("target");
+  //   // if (parseInt($(this).val(), 10) % 100 == 0) {
+  //   console.log($(this).val());
+  //   $(target).slick("slickGoTo", Math.floor($(this).val() / 100));
+  //   // }
+  // });
 
   $(".js-heroes-slider").slick({
     rows: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    dots: false,
+    dots: true,
+    appendDots: ".js-heroes-slider + .slider-scroll",
     variableWidth: true,
     nextArrow: ".js-slide-next",
     prevArrow: ".js-slide-prev",
@@ -60,7 +61,8 @@ $(document).ready(function () {
     rows: 0,
     slidesToShow: 7,
     slidesToScroll: 1,
-    dots: false,
+    dots: true,
+    appendDots: "#achievements .slider-scroll",
     nextArrow: ".js-fest-next",
     prevArrow: ".js-fest-prev",
     responsive: [
@@ -88,6 +90,8 @@ $(document).ready(function () {
     prevArrow: ".js-gal-prev",
     centerPadding: "0",
     variableWidth: true,
+    dots: true,
+    appendDots: "#gallery .slider-scroll",
   });
 
   $(".js-news-slider").slick({
@@ -97,6 +101,8 @@ $(document).ready(function () {
     centerMode: true,
     nextArrow: ".js-news-next",
     prevArrow: ".js-news-prev",
+    dots: true,
+    appendDots: "#news .slider-scroll",
     centerPadding: "0",
     variableWidth: true,
     responsive: [
@@ -118,8 +124,6 @@ $(document).ready(function () {
     const topPosition = $(
       ".heroes__item .section-content .bottom-content"
     ).offset().top;
-
-    console.log(topPosition);
 
     $("#heroes .slide-controllers").css("top", topPosition);
     updateSiteBar(nextSlide);
