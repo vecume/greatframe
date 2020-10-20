@@ -34,12 +34,15 @@ $(document).ready(function () {
   $(".slider-scroll input").each(function () {
     const target = $(this).data("target");
     const items = $(target).children().length;
-    $(this).attr("max", items - 1);
+    $(this).attr("max", items * 100 - 100);
   });
 
   $(".slider-scroll input").on("change", function () {
     const target = $(this).data("target");
-    $(target).slick("slickGoTo", $(this).val());
+    // if (parseInt($(this).val(), 10) % 100 == 0) {
+    console.log($(this).val());
+    $(target).slick("slickGoTo", Math.floor($(this).val() / 100));
+    // }
   });
 
   $(".js-heroes-slider").slick({
