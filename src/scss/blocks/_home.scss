@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   .home-content {
     margin-top: 20vh;
     h1 {
@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   .section {
     padding: 20px;
   }

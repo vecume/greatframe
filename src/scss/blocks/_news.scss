@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   #news {
     .section-content {
       margin-top: 50px;
@@ -129,7 +129,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   #news {
     .section-content {
       margin-left: 0 !important;

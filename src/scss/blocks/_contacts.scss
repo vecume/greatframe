@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   #contacts {
     .section-content {
       margin-top: 50px;
@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   #contacts {
     .play-btn {
       width: 75px;

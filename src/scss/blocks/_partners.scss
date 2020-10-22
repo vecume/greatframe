@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   .section-content {
     max-width: 70%;
 
@@ -37,7 +37,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   #partners {
     .section-content {
       margin-top: 220px;

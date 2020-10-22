@@ -101,7 +101,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   #achievements {
     .section-content {
       margin-top: 25px;
@@ -139,7 +139,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   #achievements {
     max-width: 100vw;
     .section-content {

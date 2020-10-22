@@ -15,7 +15,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   #about {
     .section-content {
       max-width: 45%;
@@ -23,7 +23,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   #about {
     .section-img {
       top: unset;

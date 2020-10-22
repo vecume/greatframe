@@ -28,22 +28,16 @@ $(document).ready(function () {
     menu: ".menu-wrapper",
     onLeave: function (index, nextIndex, direction) {
       updateSiteBar(index);
+      const topPosition = $(
+        ".heroes__item .section-content .bottom-content"
+      ).offset().top;
+      const height = $(
+        ".heroes__item .section-content .bottom-content"
+      ).height();
+
+      $("#heroes .slide-controllers").css("top", topPosition + height);
     },
   });
-
-  // $(".slider-scroll input").each(function () {
-  //   const target = $(this).data("target");
-  //   const items = $(target).children().length;
-  //   $(this).attr("max", items * 100 - 100);
-  // });
-
-  // $(".slider-scroll input").on("change", function () {
-  //   const target = $(this).data("target");
-  //   // if (parseInt($(this).val(), 10) % 100 == 0) {
-  //   console.log($(this).val());
-  //   $(target).slick("slickGoTo", Math.floor($(this).val() / 100));
-  //   // }
-  // });
 
   $(".js-heroes-slider").slick({
     rows: 0,
@@ -124,8 +118,9 @@ $(document).ready(function () {
     const topPosition = $(
       ".heroes__item .section-content .bottom-content"
     ).offset().top;
+    const height = $(".heroes__item .section-content .bottom-content").height();
 
-    $("#heroes .slide-controllers").css("top", topPosition);
+    $("#heroes .slide-controllers").css("top", topPosition + height);
     updateSiteBar(nextSlide);
   });
 

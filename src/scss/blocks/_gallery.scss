@@ -70,7 +70,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   #gallery {
     .section-content {
       margin-top: -65px;
@@ -100,7 +100,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   #gallery {
     max-width: 100vw;
     .pp-tableCell {

@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: $breakpoint-d) {
   .fullpage-menu {
     width: 100%;
   }
@@ -148,7 +148,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: $breakpoint-m) {
   .fullpage-menu {
     padding: 25px;
     background-image: none;
