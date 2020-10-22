@@ -31,11 +31,8 @@ $(document).ready(function () {
       const topPosition = $(
         ".heroes__item .section-content .bottom-content"
       ).offset().top;
-      const height = $(
-        ".heroes__item .section-content .bottom-content"
-      ).height();
 
-      $("#heroes .slide-controllers").css("top", topPosition + height);
+      $("#heroes .slide-controllers").css("top", topPosition + 190);
     },
   });
 
@@ -118,9 +115,8 @@ $(document).ready(function () {
     const topPosition = $(
       ".heroes__item .section-content .bottom-content"
     ).offset().top;
-    const height = $(".heroes__item .section-content .bottom-content").height();
 
-    $("#heroes .slide-controllers").css("top", topPosition + height);
+    $("#heroes .slide-controllers").css("top", topPosition + 200);
     updateSiteBar(nextSlide);
   });
 
