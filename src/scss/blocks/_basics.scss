@@ -479,7 +479,7 @@ img {
     display: none;
   }
   .section {
-    &::before {
+    .bg-layer {
       background-image: none;
       display: none;
     }
