@@ -68,6 +68,11 @@
     }
   }
   &:nth-child(4) {
+    .section-content {
+      h2 {
+        font-size: 100px;
+      }
+    }
     .bg-layer {
       background-image: url("../img/hero-bg4.png");
     }
