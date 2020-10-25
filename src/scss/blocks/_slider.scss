@@ -215,6 +215,11 @@
   .heroes__item {
     max-height: -webkit-fill-available;
     height: 100vh;
+
+    .section-img {
+      max-height: -webkit-fill-available;
+      height: 100vh;
+    }
     .section-content {
       h3 {
         font-size: 30px;
