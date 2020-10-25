@@ -304,7 +304,7 @@ img {
     display: block;
     width: unset;
   }
-  &::before {
+  .bg-layer {
     content: "";
     position: absolute;
     top: 0;

@@ -20,7 +20,7 @@
 }
 
 .home {
-  &::before {
+  .bg-layer {
     background: {
       image: url("../img/main-bg.png");
       repeat: no-repeat;

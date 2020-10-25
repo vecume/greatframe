@@ -16,7 +16,7 @@
     display: none;
   }
 
-  &::before {
+  .bg-layer {
     background: {
       image: url("../img/about-bg.png");
       position: center center;

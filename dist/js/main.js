@@ -14874,12 +14874,17 @@ $(document).ready(function () {
 
   $(document).on("mousemove", function (e) {
     const layer = $(".section-img");
-    const speed = 2;
+    const speed1 = 2;
+    const speed2 = -3;
 
-    const x = (window.innerWidth - e.pageX * speed) / 100;
-    const y = (window.innerHeight - e.pageY * speed) / 100;
+    const x = (window.innerWidth - e.pageX * speed1) / 100;
+    const y = (window.innerHeight - e.pageY * speed1) / 100;
+
+    const x2 = (window.innerWidth - e.pageX * speed2) / 100;
+    const y2 = (window.innerHeight - e.pageY * speed2) / 100;
 
     layer.css("transform", `scale(1.1) translate(${x}px, ${y}px)`);
+    $(".bg-layer").css("transform", `scale(1.08) translate(${x2}px, ${y2}px)`);
   });
 
   const menuAnchors = [

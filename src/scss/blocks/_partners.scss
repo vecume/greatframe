@@ -1,8 +1,9 @@
 #partners {
-  &::before {
+  .bg-layer {
     background: {
       image: url("../img/partners-bg.png");
       position: center center;
+      size: contain;
     }
   }
   .section-img {

@@ -4,7 +4,7 @@
     color: #f3f9fb;
     top: 60%;
   }
-  &::before {
+  .bg-layer {
     background: {
       image: url("../img/about-bg.png");
       position: center center;

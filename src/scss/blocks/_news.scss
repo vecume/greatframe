@@ -1,5 +1,5 @@
 #news {
-  &::before {
+  .bg-layer {
     background: {
       image: url("../img/gallery-bg.png");
       position: center center;
