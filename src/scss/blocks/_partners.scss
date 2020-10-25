@@ -1,16 +1,16 @@
 #partners {
-  background-color: $color1 !important;
+  // background-color: $color1 !important;
   .big-text {
-    color: #193f9f;
+    // color: #193f9f;
   }
-  .menu-toggler-btn span {
-    color: #fff;
-  }
-  .scroll-message {
-    span {
-      color: #fff;
-    }
-  }
+  // .menu-toggler-btn span {
+  //   color: #fff;
+  // }
+  // .scroll-message {
+  //   span {
+  //     color: #fff;
+  //   }
+  // }
   &::before {
     background: {
       image: url("../img/partners-bg.png");
@@ -33,7 +33,7 @@
     }
 
     h3 {
-      color: #fff;
+      color: $text-color;
       max-width: 300px;
     }
 

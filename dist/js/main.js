@@ -14863,6 +14863,9 @@ return jQuery;
 $(document).ready(function () {
   location.href = "#";
 
+  // alert(window.innerHeight);
+  $(document.documentElement).css("--vh", window.innerHeight + "px");
+  // alert(window.innerHeight);
   // if ($(window).width() > 968) {
   //   const windowWidth = $(window).width();
   //   console.log(`${(windowWidth / 1920) * 100}%;`);
