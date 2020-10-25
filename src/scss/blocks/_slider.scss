@@ -213,6 +213,7 @@
 
 @media (max-width: 1280px) {
   .heroes__item {
+    max-height: -webkit-fill-available;
     .section-content {
       h3 {
         font-size: 30px;
@@ -250,8 +251,10 @@
         overflow: hidden;
       }
       .bottom-content {
-        max-width: 100%;
+        max-width: 90vw;
         width: 100%;
+        display: flex;
+        flex-direction: column;
         margin: 0;
         & > div {
           margin-left: 0;
@@ -262,7 +265,7 @@
           }
         }
         .bottom-content-wrapper {
-          display: none;
+          // display: none;
         }
         h5 {
           display: none;

@@ -119,13 +119,19 @@
         font-size: 36px;
       }
     }
+    #contact-section-content {
+      margin-top: 50px;
+      height: auto;
+    }
     .contact-details {
       margin-bottom: 20px;
+      margin-top: 0 !important;
     }
     .contact-form {
       h3 {
         font-size: 30px;
-        margin-bottom: 25px;
+        margin-bottom: 25px !important;
+        display: none;
       }
     }
     .feedback-form {
