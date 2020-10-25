@@ -21,6 +21,7 @@
 .heroes__item {
   position: absolute !important;
   height: 100%;
+  max-height: var(--vh);
   display: flex;
   align-items: center;
   width: 100%;
@@ -263,9 +264,6 @@
           strong {
             font-size: 20px;
           }
-        }
-        .bottom-content-wrapper {
-          // display: none;
         }
         h5 {
           display: none;
