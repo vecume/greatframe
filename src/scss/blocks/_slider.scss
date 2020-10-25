@@ -213,14 +213,6 @@
 
 @media (max-width: 1280px) {
   .heroes__item {
-    max-height: -webkit-fill-available;
-    height: 90vh;
-    bottom: 0;
-    top: unset !important;
-    .section-img {
-      max-height: -webkit-fill-available;
-      height: 100vh;
-    }
     .section-content {
       h3 {
         font-size: 30px;
