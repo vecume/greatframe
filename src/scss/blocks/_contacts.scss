@@ -102,9 +102,6 @@
 
 @media (max-width: $breakpoint-d) {
   #contacts {
-    .section-img {
-      right: -200px !important;
-    }
     .section-content {
       margin-top: 50px;
     }
@@ -148,6 +145,14 @@
         padding: 15px 40px;
         border-radius: 100px;
       }
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  #contacts {
+    .section-img {
+      right: -150px !important;
     }
   }
 }

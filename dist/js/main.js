@@ -14872,6 +14872,16 @@ $(document).ready(function () {
   //   $("body").css(`zoom`, `${(windowWidth / 1900) * 100}%`);
   // }
 
+  $(document).on("mousemove", function (e) {
+    const layer = $(".section-img");
+    const speed = 2;
+
+    const x = (window.innerWidth - e.pageX * speed) / 100;
+    const y = (window.innerHeight - e.pageY * speed) / 100;
+
+    layer.css("transform", `scale(1.1) translate(${x}px, ${y}px)`);
+  });
+
   const menuAnchors = [
     "main",
     "about",
