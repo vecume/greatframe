@@ -14908,6 +14908,7 @@ $(document).ready(function () {
     anchors: menuAnchors,
     menu: ".menu-wrapper",
     onLeave: function (index, nextIndex, direction) {
+      $(".js-heroes-slider").slick("slickGoTo", 0);
       updateSiteBar(index);
     },
   });
