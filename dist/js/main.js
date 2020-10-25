@@ -14884,7 +14884,7 @@ $(document).ready(function () {
       const x2 = (window.innerWidth - e.pageX * speed2) / 100;
       const y2 = (window.innerHeight - e.pageY * speed2) / 100;
 
-      layer.css("transform", `scale(1.1) translate(${x}px, ${y}px)`);
+      layer.css("transform", `scale(1.05) translate(${x}px, ${y}px)`);
       $(".bg-layer").css(
         "transform",
         `scale(1.08) translate(${x2}px, ${y2}px)`
