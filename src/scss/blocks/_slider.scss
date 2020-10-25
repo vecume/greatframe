@@ -105,17 +105,15 @@
     .bottom-content {
       display: flex;
       margin: 0 auto;
-      h5 {
+      & > div {
         margin-left: 10px;
         width: 35%;
         margin-right: 20px;
-        font-size: 24px;
+        font-size: 20px;
+        font-weight: normal !important;
         color: #fff;
-        p {
-          margin-top: 20px;
-          font-weight: normal;
-          line-height: 1.5;
-          font-size: 17px;
+        strong {
+          font-size: 24px;
         }
       }
       .bottom-content-wrapper {
@@ -170,6 +168,16 @@
         right: -150px !important;
       }
     }
+    &:nth-child(6) {
+      .section-img {
+        right: -250px !important;
+      }
+    }
+    &:nth-child(8) {
+      .section-img {
+        right: -300px !important;
+      }
+    }
     .section-content {
       // max-width: 65%;
       margin-left: 50px !important;
@@ -195,6 +203,9 @@
       .bottom-content {
         // width: 50%;
         margin: 0 auto;
+        .bottom-content-wrapper {
+          width: 40%;
+        }
       }
     }
   }
@@ -234,9 +245,16 @@
         overflow: hidden;
       }
       .bottom-content {
-        max-width: 270px;
+        max-width: 100%;
         width: 100%;
         margin: 0;
+        & > div {
+          margin-left: 0;
+          width: 100%;
+        }
+        .bottom-content-wrapper {
+          display: none;
+        }
         h5 {
           display: none;
         }
@@ -250,7 +268,7 @@
       display: none;
     }
     .section-img {
-      height: 90vh;
+      // height: 90vh;
       bottom: 0;
       top: unset;
       right: -135px !important;
@@ -278,15 +296,29 @@
         right: -85px !important;
       }
     }
+    &.new-heroes {
+      .section-content {
+        margin-top: 25vh !important;
+      }
+      .section-img {
+        height: auto;
+        align-items: flex-end;
+        right: 0 !important;
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+    }
   }
   .slider-scroll {
     display: block;
     position: absolute;
     left: 50%;
-    width: 60%;
+    width: 80%;
     z-index: 10;
     border-radius: 50px;
-    height: 7px;
+    height: 5px;
     background-color: $color3;
     transform: translateX(-50%);
     bottom: 25px;
@@ -298,8 +330,8 @@
       li {
         button {
           display: block;
-          width: 37px;
-          height: 21px;
+          width: 25px;
+          height: 15px;
           background-color: $color2;
           background-image: url("../img/icons/scroll-lines.svg");
           background-repeat: no-repeat;

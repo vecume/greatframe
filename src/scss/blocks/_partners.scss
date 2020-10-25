@@ -1,4 +1,16 @@
 #partners {
+  background-color: $color1 !important;
+  .big-text {
+    color: #193f9f;
+  }
+  .menu-toggler-btn span {
+    color: #fff;
+  }
+  .scroll-message {
+    span {
+      color: #fff;
+    }
+  }
   &::before {
     background: {
       image: url("../img/partners-bg.png");
@@ -11,28 +23,36 @@
   .section-content {
     max-width: 1150px;
 
-    .img-wrapper {
-      justify-content: flex-start;
-      margin-left: -30px;
+    .partners-wrapper {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .img-wrapper {
+        width: 100px;
+      }
     }
 
-    h3,
-    p {
-      color: #fff;
-      max-width: 650px;
-    }
     h3 {
+      color: #fff;
       max-width: 300px;
+    }
+
+    p {
+      display: none;
     }
   }
 }
 
 @media (max-width: $breakpoint-d) {
-  .section-content {
-    max-width: 70%;
-
-    .img-wrapper {
+  #partners {
+    .section-content {
       max-width: 70%;
+      .partners-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .img-wrapper {
+        max-width: 70%;
+      }
     }
   }
 }
@@ -45,9 +65,18 @@
       p {
         display: none;
       }
+
       .img-wrapper {
         max-width: 100%;
         margin: 0;
+      }
+      .partners-wrapper {
+        width: fit-content;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px 40px;
+        .img-wrapper {
+          width: 50px;
+        }
       }
     }
     .section-img {

@@ -14886,11 +14886,6 @@ $(document).ready(function () {
     menu: ".menu-wrapper",
     onLeave: function (index, nextIndex, direction) {
       updateSiteBar(index);
-      // const topPosition = $(
-      //   ".heroes__item .section-content .bottom-content"
-      // ).offset().top;
-
-      // $("#heroes .slide-controllers").css("top", topPosition + 190);
     },
   });
 
@@ -15006,6 +15001,7 @@ $(document).ready(function () {
   });
 
   function updateSiteBar(index) {
+    console.log(index);
     if (index % 2) {
       $(".main").addClass("even-section");
     } else {

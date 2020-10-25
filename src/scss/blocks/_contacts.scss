@@ -1,4 +1,21 @@
 #contacts {
+  background-color: #fff !important;
+  .big-text {
+    color: #f3f9fb;
+  }
+  .menu-toggler-btn span {
+    color: $text-color;
+  }
+  .scroll-message {
+    span {
+      color: #000;
+    }
+  }
+
+  button[data-target=".contact-details"] {
+    display: none;
+  }
+
   &::before {
     background: {
       image: url("../img/about-bg.png");
@@ -85,6 +102,9 @@
 
 @media (max-width: $breakpoint-d) {
   #contacts {
+    .section-img {
+      right: -200px !important;
+    }
     .section-content {
       margin-top: 50px;
     }
@@ -157,8 +177,10 @@
     .section-content {
       margin-left: 0 !important;
       .contact-details {
-        display: none;
-
+        display: block;
+        .contact-item.email {
+          text-align: center;
+        }
         margin-top: 80px;
         .contact-text {
           h3 {
