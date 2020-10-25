@@ -216,7 +216,7 @@
     max-height: -webkit-fill-available;
     height: 90vh;
     bottom: 0;
-    top: unset;
+    top: unset !important;
     .section-img {
       max-height: -webkit-fill-available;
       height: 100vh;

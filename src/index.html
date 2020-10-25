@@ -450,7 +450,17 @@
                 </div>
               </div>
               <div class="img-wrapper section-img">
-                <img src="img/hero-img10.png" alt="hero img" />
+                <picture>
+                  <source
+                    media="(max-width: 968px)"
+                    srcset="img/hero-img10-mob.png"
+                  />
+                  <source
+                    media="(min-width: 968px)"
+                    srcset="img/hero-img10.png"
+                  />
+                  <img src="img/hero-img10-mob.png" alt="main img" />
+                </picture>
               </div>
             </div>
             <div class="new-heroes heroes__item">
@@ -1294,14 +1304,14 @@
             <li data-menuanchor="main"><a href="#main">Главная</a></li>
             <li data-menuanchor="about"><a href="#about"> О компании</a></li>
             <li data-menuanchor="heroes"><a href="#heroes">Герои</a></li>
-            <li data-menuanchor="team"><a href="#team">Команда</a></li>
+            <!-- <li data-menuanchor="team"><a href="#team">Команда</a></li> -->
           </div>
           <div class="main-menu__inner">
             <li data-menuanchor="partners"><a href="#partners">Партнеры</a></li>
-            <li data-menuanchor="achievements">
+            <!-- <li data-menuanchor="achievements">
               <a href="#achievements">Достижения</a>
-            </li>
-            <li data-menuanchor="gallery"><a href="#gallery">Галерея</a></li>
+            </li> -->
+            <!-- <li data-menuanchor="gallery"><a href="#gallery">Галерея</a></li> -->
             <li data-menuanchor="contacts"><a href="#contacts">контакты</a></li>
           </div>
         </ul>
