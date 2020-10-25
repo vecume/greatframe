@@ -15,12 +15,12 @@ $(document).ready(function () {
     "main",
     "about",
     "heroes",
-    "team",
+    // "team",
     "partners",
-    "achievements",
-    "gallery",
+    // "achievements",
+    // "gallery",
     "contacts",
-    "news",
+    // "news",
   ];
   const fullpage = $("#fullpage").pagepiling({
     navigation: false,
@@ -28,11 +28,11 @@ $(document).ready(function () {
     menu: ".menu-wrapper",
     onLeave: function (index, nextIndex, direction) {
       updateSiteBar(index);
-      const topPosition = $(
-        ".heroes__item .section-content .bottom-content"
-      ).offset().top;
+      // const topPosition = $(
+      //   ".heroes__item .section-content .bottom-content"
+      // ).offset().top;
 
-      $("#heroes .slide-controllers").css("top", topPosition + 190);
+      // $("#heroes .slide-controllers").css("top", topPosition + 190);
     },
   });
 
@@ -48,63 +48,63 @@ $(document).ready(function () {
     prevArrow: ".js-slide-prev",
   });
 
-  $(".js-achieve-slider").slick({
-    rows: 0,
-    slidesToShow: 7,
-    slidesToScroll: 1,
-    dots: true,
-    appendDots: "#achievements .slider-scroll",
-    nextArrow: ".js-fest-next",
-    prevArrow: ".js-fest-prev",
-    responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 5,
-        },
-      },
-      {
-        breakpoint: 451,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
+  // $(".js-achieve-slider").slick({
+  //   rows: 0,
+  //   slidesToShow: 7,
+  //   slidesToScroll: 1,
+  //   dots: true,
+  //   appendDots: "#achievements .slider-scroll",
+  //   nextArrow: ".js-fest-next",
+  //   prevArrow: ".js-fest-prev",
+  //   responsive: [
+  //     {
+  //       breakpoint: 1400,
+  //       settings: {
+  //         slidesToShow: 5,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 451,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //   ],
+  // });
 
-  $(".js-gallery-slider").slick({
-    rows: 0,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    centerMode: true,
-    nextArrow: ".js-gal-next",
-    prevArrow: ".js-gal-prev",
-    centerPadding: "0",
-    variableWidth: true,
-    dots: true,
-    appendDots: "#gallery .slider-scroll",
-  });
+  // $(".js-gallery-slider").slick({
+  //   rows: 0,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 1,
+  //   centerMode: true,
+  //   nextArrow: ".js-gal-next",
+  //   prevArrow: ".js-gal-prev",
+  //   centerPadding: "0",
+  //   variableWidth: true,
+  //   dots: true,
+  //   appendDots: "#gallery .slider-scroll",
+  // });
 
-  $(".js-news-slider").slick({
-    rows: 0,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    nextArrow: ".js-news-next",
-    prevArrow: ".js-news-prev",
-    dots: true,
-    appendDots: "#news .slider-scroll",
-    centerPadding: "0",
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 451,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
+  // $(".js-news-slider").slick({
+  //   rows: 0,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   centerMode: true,
+  //   nextArrow: ".js-news-next",
+  //   prevArrow: ".js-news-prev",
+  //   dots: true,
+  //   appendDots: "#news .slider-scroll",
+  //   centerPadding: "0",
+  //   variableWidth: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 451,
+  //       settings: {
+  //         slidesToShow: 1,
+  //       },
+  //     },
+  //   ],
+  // });
 
   $(".js-heroes-slider").on("beforeChange", function (
     event,
@@ -112,11 +112,11 @@ $(document).ready(function () {
     currentSlide,
     nextSlide
   ) {
-    const topPosition = $(
-      ".heroes__item .section-content .bottom-content"
-    ).offset().top;
+    // const topPosition = $(
+    //   ".heroes__item .section-content .bottom-content"
+    // ).offset().top;
 
-    $("#heroes .slide-controllers").css("top", topPosition + 200);
+    // $("#heroes .slide-controllers").css("top", topPosition + 200);
     updateSiteBar(nextSlide);
   });
 

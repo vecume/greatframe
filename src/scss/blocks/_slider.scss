@@ -59,18 +59,12 @@
       background-image: url("../img/hero-bg2.png");
       background-position: center center;
     }
-    .section-img {
-      right: 225px;
-    }
   }
 
   &:nth-child(3) {
     &::before {
       background-image: url("../img/hero-bg3.png");
       background-position: center left 40%;
-    }
-    .section-img {
-      right: 50px;
     }
   }
   &:nth-child(4) {
@@ -82,15 +76,14 @@
     &::before {
       background-image: url("../img/hero-bg5.png");
     }
-    .section-img {
-      right: 225px;
-    }
   }
 
   .section-content {
+    position: relative;
+    z-index: 10;
     margin-left: 110px;
     display: block;
-    margin-top: 25vh;
+    margin-top: 150px;
     h3 {
       color: #fff;
       font-size: 48px;
@@ -140,16 +133,9 @@
 }
 
 .slide-controllers {
-  position: absolute;
-  left: 120px;
-  top: 51vh;
   z-index: 10;
+  margin-top: 20px;
   max-width: 230px;
-  h5 {
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 40px;
-  }
   button {
     width: 80px;
     height: 80px;
