@@ -214,8 +214,9 @@
 @media (max-width: 1280px) {
   .heroes__item {
     max-height: -webkit-fill-available;
-    height: 100vh;
-
+    height: 90vh;
+    bottom: 0;
+    top: unset;
     .section-img {
       max-height: -webkit-fill-available;
       height: 100vh;
