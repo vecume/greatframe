@@ -14919,6 +14919,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     fade: true,
     dots: true,
+    infinite: false,
     appendDots: ".js-heroes-slider + .slider-scroll",
     variableWidth: true,
     nextArrow: ".js-slide-next",
