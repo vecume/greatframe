@@ -162,6 +162,10 @@
   display: none;
 }
 
+.mob-hero-def {
+  display: none;
+}
+
 @media (max-width: $breakpoint-d) {
   #heroes {
     .slide-controllers {
@@ -191,7 +195,7 @@
         right: -300px !important;
       }
     }
-    
+
     .section-content {
       // max-width: 65%;
       margin-left: 50px !important;
@@ -267,11 +271,15 @@
         font-size: 14px;
       }
       h2 {
-        font-size: 40px;
+        font-size: 35px;
+        margin-bottom: 10px;
       }
       p {
-        height: 87px;
-        overflow: hidden;
+        display: none;
+        font-size: 13px;
+        &.mob-hero-def {
+          display: block;
+        }
       }
       .bottom-content {
         max-width: 90vw;
@@ -282,10 +290,10 @@
         & > div {
           margin-left: 0;
           width: 100%;
-          margin-bottom: 15px;
-          font-size: 18px;
+          margin-bottom: 10px;
+          font-size: 16px;
           strong {
-            font-size: 18px;
+            font-size: 16px;
           }
         }
         h5 {
@@ -316,16 +324,18 @@
     }
     &:nth-child(4) {
       .section-img {
-        right: -300px !important;
+        right: -200px !important;
       }
     }
     &:nth-child(5) {
       .section-img {
+        width: 70%;
         right: 0px !important;
       }
     }
     &:nth-child(6) {
       .section-img {
+        width: 70%;
         right: -85px !important;
       }
     }
