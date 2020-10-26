@@ -37,7 +37,7 @@
     .section-content {
       max-width: 70%;
       .partners-wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
       .img-wrapper {
         max-width: 70%;
@@ -49,7 +49,7 @@
 @media (max-width: $breakpoint-m) {
   #partners {
     .section-content {
-      margin-top: 220px;
+      margin-top: 150px;
       margin-left: 0 !important;
       p {
         display: none;
