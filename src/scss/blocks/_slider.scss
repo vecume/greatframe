@@ -309,34 +309,37 @@
       display: none;
     }
     .section-img {
-      // height: 90vh;
       bottom: 0;
       top: unset;
-      right: -135px !important;
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
       .section-img {
-        display: block;
-        height: auto;
-        right: 15% !important;
-        top: 70px;
+        width: 60%;
       }
     }
     &:nth-child(4) {
       .section-img {
-        right: -200px !important;
+        width: 65%;
       }
     }
     &:nth-child(5) {
       .section-img {
-        width: 70%;
-        right: 0px !important;
+        width: 50%;
       }
     }
     &:nth-child(6) {
       .section-img {
         width: 70%;
-        right: -85px !important;
+      }
+    }
+    &:nth-child(7) {
+      .section-img {
+        width: 80%;
+      }
+    }
+    &:nth-child(10) {
+      .section-img {
+        width: 90%;
       }
     }
     &.new-heroes {
