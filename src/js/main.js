@@ -51,6 +51,7 @@ $(document).ready(function () {
     menu: ".menu-wrapper",
     afterLoad: function (anchor, index) {
       $(".js-heroes-slider").slick("slickGoTo", 0);
+      // console.log(index);
       updateSiteBar(index);
     },
   });
@@ -61,7 +62,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     fade: true,
     dots: true,
-    infinite: false,
+    // infinite: false,
     appendDots: ".js-heroes-slider + .slider-scroll",
     variableWidth: true,
     nextArrow: ".js-slide-next",
@@ -137,6 +138,9 @@ $(document).ready(function () {
     // ).offset().top;
 
     // $("#heroes .slide-controllers").css("top", topPosition + 200);
+    // if (nex) {
+    // }
+    $("#heroes").attr("data-slide", nextSlide);
     updateSiteBar(currentSlide);
   });
 
