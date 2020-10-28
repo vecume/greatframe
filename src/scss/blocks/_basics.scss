@@ -302,7 +302,6 @@ img {
     width: unset;
   }
   .bg-layer {
-    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -312,7 +311,7 @@ img {
       repeat: no-repeat;
       size: cover;
     }
-    z-index: 0;
+    z-index: -1;
   }
 }
 
